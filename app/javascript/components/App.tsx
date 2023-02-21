@@ -1,16 +1,11 @@
-import React from 'react';
-import ButtonPrimary from '../shared/buttons/ButtonPrimary';
+import React, { FC, StrictMode } from 'react';
+import { AppRoutes } from '../routes';
+import '../styles/index.scss'
 
-const App: React.FC = (): JSX.Element => {
-  return <div>
-    <h1> Jhon miss na kita Jhon  - JEPOY </h1>
-
-    {/* @ts-ignore */}
-    <ButtonPrimary
-      className="mt-6 sm:mt-11"
-      buttonName='Button'
-    />
-  </div>
-};
+const App: FC = () => (
+  <StrictMode>
+    <AppRoutes />
+  </StrictMode>
+)
 
 export default App;

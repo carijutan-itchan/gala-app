@@ -15,7 +15,7 @@ export interface ButtonProps {
 };
 
 const Button: FC<ButtonProps> = ({
-  className = "text-neutral-700 dark:text-neutral-200",
+  className = "text-neutral-700",
   translate = "",
   sizeClass = "px-4 py-3 sm:px-6",
   fontSize = "text-sm sm:text-base font-medium",
@@ -27,7 +27,7 @@ const Button: FC<ButtonProps> = ({
   onClick = () => { },
 }) => {
 
-  const CLASSES = `nc-Button relative h-auto inline-flex items-center justify-center rounded-full transition-colors ${fontSize} ${sizeClass} ${translate} ${className} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000 dark:focus:ring-offset-0`
+  const CLASSES = `nc-Button relative h-auto inline-flex items-center justify-center rounded-full transition-colors ${fontSize} ${sizeClass} ${translate} ${className} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000`
 
   const isLoading = () => {
     return (
